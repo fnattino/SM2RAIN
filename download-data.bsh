@@ -1,0 +1,9 @@
+#!/bin/bash
+# Downloa NetCDF files from https://zenodo.org/records/10376109 - version 2.1.2n - 2007/2022
+data_dir="data"
+for year in {2007..2022}; do
+ file=SM2RAIN_ASCAT_01_v2-1-2n_year_${year}.nc
+ if [ ! -e ${data_dir}/${file} ] ; then
+   wget -P ${data_dir} https://zenodo.org/records/10376109/files/${file}
+ fi
+done

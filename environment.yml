@@ -1,0 +1,16 @@
+name: precipitation
+channels:
+ - conda-forge
+dependencies:
+ - python=3.12
+ - bokeh
+ - cartopy
+ - dask[complete]
+ - geoviews
+ - h5netcdf
+ - jupyterlab
+ - hvplot
+ - panel
+ - pyproj
+ - xarray
+
